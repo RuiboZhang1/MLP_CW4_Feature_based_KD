@@ -1,0 +1,27 @@
+2023-03-17 12:20:45,796	INFO	torchdistill.common.main_util	| distributed init (rank 0): env://
+2023-03-17 12:20:45,807	INFO	torch.distributed.distributed_c10d	Added key: store_based_barrier_key:1 to store for rank: 0
+2023-03-17 12:20:45,808	INFO	torch.distributed.distributed_c10d	Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 1 nodes.
+2023-03-17 12:20:53,100	INFO	__main__	Namespace(adjust_lr=False, config='torchdistill/configs/sample/cifar100/ce/resnet44-teacher-31k.yaml', device='cuda', dist_url='env://', eval_period=10, log='log/cifar100/ce/resnet44-teacher-31k-test.log', log_config=False, seed=None, start_epoch=0, student_only=False, test_only=True, world_size=1)
+2023-03-17 12:20:53,153	INFO	__main__	Using NVIDIA GeForce RTX 2080 Ti for training
+2023-03-17 12:20:53,153	INFO	torchdistill.datasets.util	Loading dummy data
+2023-03-17 12:20:58,760	INFO	torchdistill.datasets.util	Splitting `25K` dataset (50000 samples in total)
+2023-03-17 12:20:58,986	INFO	torchdistill.datasets.util	new dataset_id: `cifar100/train` (31300 samples)
+2023-03-17 12:20:58,987	INFO	torchdistill.datasets.util	new dataset_id: `cifar100/val` (18700 samples)
+2023-03-17 12:20:58,987	INFO	torchdistill.datasets.util	dataset_id `25K`: 5.833540916442871 sec
+2023-03-17 12:20:58,987	INFO	torchdistill.datasets.util	Loading test data
+2023-03-17 12:20:59,875	INFO	torchdistill.datasets.util	dataset_id `cifar100/test`: 0.8877303600311279 sec
+2023-03-17 12:21:00,073	INFO	torchdistill.common.main_util	ckpt file is not found at `./resource/ckpt/cifar100/ce/cifar100-resnet44-teacher-31k.pt`
+2023-03-17 12:21:00,224	INFO	__main__	[Student: resnet44]
+2023-03-17 12:21:15,939	INFO	torchdistill.misc.log	Test:  [    0/10000]  eta: 1 day, 19:37:35  acc1: 0.0000 (0.0000)  acc5: 0.0000 (0.0000)  time: 15.7056  data: 1.1398  max mem: 23
+2023-03-17 12:21:25,789	INFO	torchdistill.misc.log	Test:  [ 1000/10000]  eta: 0:03:49  acc1: 0.0000 (1.4985)  acc5: 0.0000 (6.0939)  time: 0.0093  data: 0.0002  max mem: 23
+2023-03-17 12:21:35,406	INFO	torchdistill.misc.log	Test:  [ 2000/10000]  eta: 0:02:20  acc1: 0.0000 (1.2994)  acc5: 0.0000 (5.5972)  time: 0.0096  data: 0.0002  max mem: 23
+2023-03-17 12:21:45,154	INFO	torchdistill.misc.log	Test:  [ 3000/10000]  eta: 0:01:44  acc1: 0.0000 (1.2662)  acc5: 0.0000 (5.5315)  time: 0.0095  data: 0.0002  max mem: 23
+2023-03-17 12:21:54,654	INFO	torchdistill.misc.log	Test:  [ 4000/10000]  eta: 0:01:21  acc1: 0.0000 (1.1747)  acc5: 0.0000 (5.4486)  time: 0.0100  data: 0.0002  max mem: 23
+2023-03-17 12:22:04,198	INFO	torchdistill.misc.log	Test:  [ 5000/10000]  eta: 0:01:03  acc1: 0.0000 (1.0798)  acc5: 0.0000 (5.3789)  time: 0.0092  data: 0.0002  max mem: 23
+2023-03-17 12:22:13,706	INFO	torchdistill.misc.log	Test:  [ 6000/10000]  eta: 0:00:48  acc1: 0.0000 (1.0165)  acc5: 0.0000 (5.0658)  time: 0.0094  data: 0.0002  max mem: 23
+2023-03-17 12:22:23,084	INFO	torchdistill.misc.log	Test:  [ 7000/10000]  eta: 0:00:35  acc1: 0.0000 (1.0427)  acc5: 0.0000 (5.0564)  time: 0.0092  data: 0.0002  max mem: 23
+2023-03-17 12:22:32,741	INFO	torchdistill.misc.log	Test:  [ 8000/10000]  eta: 0:00:23  acc1: 0.0000 (1.0499)  acc5: 0.0000 (5.0619)  time: 0.0096  data: 0.0002  max mem: 23
+2023-03-17 12:22:42,441	INFO	torchdistill.misc.log	Test:  [ 9000/10000]  eta: 0:00:11  acc1: 0.0000 (1.0221)  acc5: 0.0000 (5.0106)  time: 0.0100  data: 0.0002  max mem: 23
+2023-03-17 12:22:52,157	INFO	torchdistill.misc.log	Test: Total time: 0:01:51
+2023-03-17 12:22:52,158	INFO	__main__	 * Acc@1 1.0000	Acc@5 5.0000
+
